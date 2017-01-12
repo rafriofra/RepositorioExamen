@@ -31,8 +31,8 @@ public class Test2
     /**
      * Rigourous Test :-)
      */
-//    public void testApp()
-//    {
-//        assertTrue( new MisMatematicas().multiplica(4,2) == 8 );
-//    }
+    public void testApp()
+    {
+        assertTrue( new MisMatematicas().multiplica(4,2) == 8 );
+    }
 }
