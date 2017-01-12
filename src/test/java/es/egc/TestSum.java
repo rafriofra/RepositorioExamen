@@ -2,32 +2,56 @@ package es.egc;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.*;
+import org.junit.Test;
 
 
+import es.egc.Sum;
 
+public class TestSum {
 
-public class TestSum{
 	
 	@Test
-	public void testSuma(){
-		assertEquals(6, sum(2,4));
+	public void testSum2() {
+		assertEquals(4, Sum.sum(2, 2));
 	}
-
+	
+	@Test
+	public void testSumNumWithZero() {
+		assertEquals(3, Sum.sum(3, 0));
+		assertEquals(3, Sum.sum(0, 3));
+	}
+	
+	@Test
+	public void testSumNumNeg() {
+		assertEquals(-6, Sum.sum(-3, -3));
+		assertEquals(2, Sum.sum(5, -3));
+	}
+	
 	@Test(expected=AssertionError.class)
-	public void testCeros(){
-		assertEquals(6, sum(0,4));
-		assertEquals(6, sum(4,0));
+	public void testSum2Fail() {
+		assertEquals(5, Sum.sum(2, 2));
+	}
+	
+	
+	@Test(expected=AssertionError.class)
+	public void testSumNumWithZeroFail() {
+		assertEquals(3, Sum.sum(3, 0));
+		assertEquals(0, Sum.sum(0, 3));
+	}
+	
+	@Test(expected=AssertionError.class)
+	public void testSumNumNegFail() {
+		assertEquals(6, Sum.sum(-3, -3));
+		assertEquals(-2, Sum.sum(5, -3));
+	}
+	
+	@Test(expected=AssertionError.class)
+	public void testSum3Fail() {
+		assertEquals(3, Sum.sum(1,1, 2));
 	}
 	
 	@Test
-	public void testNegativos(){
-		assertEquals(10, sum(12,-2));
-		assertEquals(-7, sum(-4,-3));
-	}
-	
-	@Test
-	public int sum(int a, int b){
-		return sum(a, b);
+	public void testSum3() {
+		assertEquals(4, Sum.sum(1,1, 2));
 	}
 }
