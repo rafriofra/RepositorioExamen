@@ -31,8 +31,8 @@ public class Test1
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( new MisMatematicas().divide(2,2) == 1 );
-    }
+//    public void testApp()
+//    {
+//        assertTrue( new MisMatematicas().divide(2,2) == 1 );
+//    }
 }
