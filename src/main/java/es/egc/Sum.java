@@ -6,9 +6,9 @@ package es.egc;
  *
  */
  
-public class Suma{
+public class Sum{
 		int sum(int a, int b){
-		return a+b;
+			return a+b;
 	
-	}
+		}
 }
