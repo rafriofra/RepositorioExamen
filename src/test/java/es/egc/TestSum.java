@@ -54,4 +54,9 @@ public class TestSum {
 	public void testSum3() {
 		assertEquals(4, Sum.sum(1,1, 2));
 	}
+	
+	@Test
+	public void testSumMitad(){
+		assertEquals(15, Sum.mitadSum(10, 20));
+	}
 }
