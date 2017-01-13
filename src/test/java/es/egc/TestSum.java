@@ -64,4 +64,6 @@ public class TestSum {
 	public void testSumMitadNegativo(){
 		assertEquals(20, Sum.mitadSum(10, 20));
 	}
+	
+	//Creando conflicto en la rama master
 }
