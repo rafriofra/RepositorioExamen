@@ -59,4 +59,9 @@ public class TestSum {
 	public void testSumMitad(){
 		assertEquals(15, Sum.mitadSum(10, 20));
 	}
+	
+	@Test(expected=AssertionError.class)
+	public void testSumMitadNegativo(){
+		assertEquals(20, Sum.mitadSum(10, 20));
+	}
 }
