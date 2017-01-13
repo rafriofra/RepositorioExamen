@@ -66,4 +66,9 @@ public class TestSum {
 	}
 	
 	//Creando conflicto en la rama master
+<<<<<<< HEAD
+=======
+	
+	//Creando conflicto en la rama conflicto
+>>>>>>> conflicto
 }
